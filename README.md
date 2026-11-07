@@ -77,7 +77,7 @@ assumptions, read [FORMALIZATION.md](FORMALIZATION.md).
 [thm:endpoint-optimizers]: paper/sections/intro.tex#L309
 [thm:singular-endpoint]: paper/sections/singular.tex#L38
 [thm:krrs-analytic-extension]: paper/sections/preliminaries.tex#L167
-[thm:lz-boundary]: paper/sections/lz_boundary.tex#L26
+[thm:lz-boundary]: paper/sections/lz_boundary.tex#L28
 [thm:krrs-bipodality]: paper/sections/appendix_preliminaries.tex#L12
 [thm:krrs-cross-density]: paper/sections/appendix_preliminaries.tex#L46
 [rmk:bipodal-parameter-expansions]: paper/sections/appendix_nonexceptional_endpoint.tex#L168

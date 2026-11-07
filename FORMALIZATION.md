@@ -343,10 +343,10 @@ The differences are explained below for each result.
 [thm:endpoint-optimizers]: paper/sections/intro.tex#L309
 [thm:graphon-large-deviations]: paper/sections/intro.tex#L222
 [thm:lz-criterion]: paper/sections/intro.tex#L244
-[thm:lz-boundary]: paper/sections/lz_boundary.tex#L26
-[eq:contact-quadratic-separation]: paper/sections/lz_boundary.tex#L267
-[lem:convexity-defect]: paper/sections/lz_boundary.tex#L96
-[lem:contact-points]: paper/sections/lz_boundary.tex#L123
+[thm:lz-boundary]: paper/sections/lz_boundary.tex#L28
+[eq:contact-quadratic-separation]: paper/sections/lz_boundary.tex#L269
+[lem:convexity-defect]: paper/sections/lz_boundary.tex#L98
+[lem:contact-points]: paper/sections/lz_boundary.tex#L125
 [lem:active-constraint]: paper/sections/nonexceptional_local_reduction.tex#L12
 [lem:edge-density-deficit]: paper/sections/nonexceptional_local_reduction.tex#L54
 [lem:boundary-convergence]: paper/sections/nonexceptional_local_reduction.tex#L75
@@ -369,4 +369,4 @@ The differences are explained below for each result.
 [eq:optimizer-block-density]: paper/sections/appendix_nonexceptional_endpoint.tex#L208
 [eq:generalized-holder]: paper/sections/preliminaries.tex#L76
 [sec:graphons]: paper/sections/preliminaries.tex#L13
-[eq:krrs-map-agreement]: paper/sections/appendix_preliminaries.tex#L612
+[eq:krrs-map-agreement]: paper/sections/appendix_preliminaries.tex#L611
