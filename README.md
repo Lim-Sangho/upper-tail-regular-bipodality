@@ -9,19 +9,19 @@ Its LaTeX source is also included in this repository, as [paper/paper.tex](paper
 
 Each row identifies the main Lean declaration for a result in the paper. Paper
 citations and Lean declarations link directly to their source lines. Declaration
-names are relative to the namespace `UpperTailOptimizers`.
+names are relative to the namespace `UpperTailRegularBipodality`.
 
 | Paper result | Lean declaration |
 |---|---|
-| [Theorem 1.5][thm:nonexceptional-optimizers] — Nonexceptional optimizers; corollary of [Theorem 4.1][thm:nonexceptional-endpoint] | Introduction corollary: [nonexceptional_optimizers](UpperTailOptimizers/NonexceptionalEndpoint/Proof/Global.lean#L133) |
-| [Theorem 1.6][thm:endpoint-optimizers] — Singular endpoint optimizers; corollary of [Theorem 5.1][thm:singular-endpoint] | Introduction corollary: [singular_endpoint_optimizers](UpperTailOptimizers/SingularEndpoint/Proof/IntroSingularEndpointOptimizers.lean#L19) |
-| [Theorem 2.1][thm:krrs-analytic-extension] — Two-sided analytic extension of the KRR–S family | Analytic extension: [krrs_analytic_extension](UpperTailOptimizers/Preliminaries/KRRSAnalyticExtension/Extension.lean#L105) |
-| [Theorem 3.1][thm:lz-boundary] — Lubetzky–Zhao boundary | Boundary and contact geometry: [lz_boundary](UpperTailOptimizers/LZBoundary/PaperForm.lean#L477); nonexceptional gap and exceptional gap: [lz_boundary_nonexceptional_gap](UpperTailOptimizers/LZBoundary/NonexceptionalGap.lean#L531) and [lz_boundary_exceptional_gap](UpperTailOptimizers/SingularEndpoint/ExceptionalGap.lean#L194) |
-| [Theorem 4.1][thm:nonexceptional-endpoint] — Nonexceptional optimizer structure | Uniqueness, analyticity and asymptotics: [nonexceptional_endpoint](UpperTailOptimizers/NonexceptionalEndpoint/Proof/Global.lean#L42) |
-| [Theorem 5.1][thm:singular-endpoint] — Singular endpoint optimizer structure | Family, uniqueness and both expansions: [singular_endpoint](UpperTailOptimizers/SingularEndpoint/Proof/TerminalUnique.lean#L266) |
-| [Theorem A.1][thm:krrs-bipodality] — KRR–S bipodal entropy maximizers | Bipodality and parameter family: [krrs_bipodality](UpperTailOptimizers/Preliminaries/KRRSAnalyticExtension/Bipodality.lean#L120) |
-| [Theorem A.2][thm:krrs-cross-density] — KRR–S cross density | Cross-density selector: [krrs_cross_density](UpperTailOptimizers/Preliminaries/KRRSAnalyticExtension/PsiFill.lean#L286) |
-| [Remark C.1][rmk:bipodal-parameter-expansions] — Bipodal parameter asymptotics | Parameter expansions: [bipodal_parameter_expansions](UpperTailOptimizers/NonexceptionalEndpoint/Proof/ParameterExpansions.lean#L56) |
+| [Theorem 1.5][thm:nonexceptional-optimizers] — Nonexceptional optimizers; corollary of [Theorem 4.1][thm:nonexceptional-endpoint] | Introduction corollary: [nonexceptional_optimizers](UpperTailRegularBipodality/NonexceptionalEndpoint/Proof/Global.lean#L133) |
+| [Theorem 1.6][thm:endpoint-optimizers] — Singular endpoint optimizers; corollary of [Theorem 5.1][thm:singular-endpoint] | Introduction corollary: [singular_endpoint_optimizers](UpperTailRegularBipodality/SingularEndpoint/Proof/IntroSingularEndpointOptimizers.lean#L19) |
+| [Theorem 2.1][thm:krrs-analytic-extension] — Two-sided analytic extension of the KRR–S family | Analytic extension: [krrs_analytic_extension](UpperTailRegularBipodality/Preliminaries/KRRSAnalyticExtension/Extension.lean#L105) |
+| [Theorem 3.1][thm:lz-boundary] — Lubetzky–Zhao boundary | Boundary and contact geometry: [lz_boundary](UpperTailRegularBipodality/LZBoundary/PaperForm.lean#L477); nonexceptional gap and exceptional gap: [lz_boundary_nonexceptional_gap](UpperTailRegularBipodality/LZBoundary/NonexceptionalGap.lean#L531) and [lz_boundary_exceptional_gap](UpperTailRegularBipodality/SingularEndpoint/ExceptionalGap.lean#L194) |
+| [Theorem 4.1][thm:nonexceptional-endpoint] — Nonexceptional optimizer structure | Uniqueness, analyticity and asymptotics: [nonexceptional_endpoint](UpperTailRegularBipodality/NonexceptionalEndpoint/Proof/Global.lean#L42) |
+| [Theorem 5.1][thm:singular-endpoint] — Singular endpoint optimizer structure | Family, uniqueness and both expansions: [singular_endpoint](UpperTailRegularBipodality/SingularEndpoint/Proof/TerminalUnique.lean#L266) |
+| [Theorem A.1][thm:krrs-bipodality] — KRR–S bipodal entropy maximizers | Bipodality and parameter family: [krrs_bipodality](UpperTailRegularBipodality/Preliminaries/KRRSAnalyticExtension/Bipodality.lean#L120) |
+| [Theorem A.2][thm:krrs-cross-density] — KRR–S cross density | Cross-density selector: [krrs_cross_density](UpperTailRegularBipodality/Preliminaries/KRRSAnalyticExtension/PsiFill.lean#L286) |
+| [Remark C.1][rmk:bipodal-parameter-expansions] — Bipodal parameter asymptotics | Parameter expansions: [bipodal_parameter_expansions](UpperTailRegularBipodality/NonexceptionalEndpoint/Proof/ParameterExpansions.lean#L56) |
 
 ## Assumptions
 
@@ -59,9 +59,9 @@ After building, inspect a theorem's assumptions with `#print axioms`:
 
 ```sh
 lake env lean --stdin <<'EOF'
-import UpperTailOptimizers
-#print axioms UpperTailOptimizers.nonexceptional_optimizers
-#print axioms UpperTailOptimizers.singular_endpoint_optimizers
+import UpperTailRegularBipodality
+#print axioms UpperTailRegularBipodality.nonexceptional_optimizers
+#print axioms UpperTailRegularBipodality.singular_endpoint_optimizers
 EOF
 ```
 

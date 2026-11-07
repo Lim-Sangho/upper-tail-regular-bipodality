@@ -1,5 +1,5 @@
-name = "UpperTailOptimizers"
-defaultTargets = ["UpperTailOptimizers"]
+name = "UpperTailRegularBipodality"
+defaultTargets = ["UpperTailRegularBipodality"]
 
 [leanOptions]
 pp.unicode.fun = true
@@ -11,4 +11,4 @@ git = "https://github.com/leanprover-community/mathlib4.git"
 rev = "v4.33.1"
 
 [[lean_lib]]
-name = "UpperTailOptimizers"
+name = "UpperTailRegularBipodality"
